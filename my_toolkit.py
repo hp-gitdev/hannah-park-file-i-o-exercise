@@ -21,14 +21,14 @@ def find_max_and_min(numbers):
     for num in numbers:
         if num > max_number:
             max_number = num
-        if num < min_number:
+        elif num < min_number:
             min_number = num
     return (max_number, min_number)
 
 def count_occurrences(items, target):
     """Count how many times a target value appears in the list"""
 
-    count = 0
+    count = 0   #this is counting. how many times the number showes up - not the indext of 0.
     for item in items:
         if item == target:
             count += 1

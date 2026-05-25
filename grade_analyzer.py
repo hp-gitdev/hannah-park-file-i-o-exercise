@@ -84,7 +84,6 @@ scores.append(new_score)
 new_average = total / len(scores)
 print(f"\n Updated average: {new_average}")
 
-score = []
 
 while True:
     entry = input("Enter a score (or 'done' to finish): ")

@@ -68,4 +68,3 @@ elif check in inventory:
     print(f"{check} is well stocked.")
 else:
     print(f"No product found for '{check}.'")
-
