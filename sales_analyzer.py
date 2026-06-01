@@ -68,4 +68,20 @@ with open("product_summary.csv", "w", newline="") as file:
         "product": product,
         "total_quantity": quantity,
         "total_revenue": round(revenue, 2)
-        })       
+        })
+
+def main():
+    students = load_students("data/students.csv")
+
+    print(f"Loaded {len(students)} students.")
+
+    report = generate_report(students)
+
+    print_summary(report)
+
+    write_report(report, "grade_report.txt")
+
+    print("Class Report")
+
+if __name__ = "__main__":
+    main()       
